@@ -9,7 +9,7 @@ function colors.generate(mirage)
   if vim.o.background == 'dark' then
     if mirage then
       colors.accent = '#FFCC66'
-      colors.bg = '#1F2430'
+      colors.bg = '#000000'
       colors.fg = '#CBCCC6'
       colors.ui = '#707A8C'
 
@@ -50,7 +50,7 @@ function colors.generate(mirage)
       colors.warning = '#FFA759'
     else
       colors.accent = '#E6B450'
-      colors.bg = '#0A0E14'
+      colors.bg = '#000000'
       colors.fg = '#B3B1AD'
       colors.ui = '#4D5566'
 

@@ -292,7 +292,7 @@ function ayu.setup(values) setmetatable(config, { __index = vim.tbl_extend('forc
 --- Set the colorscheme.
 function ayu.colorscheme()
   if vim.version().minor < 8 then
-    vim.notify('Neovim 0.8+ is required for ayu colorscheme', vim.log.levels.ERROR, { title = 'Ayu colorscheme' })
+    vim.notify('Neovim 0.8+ is required for ayu colorscheme', vim.log.levels.ERROR, { title = 'Ayu blackhole colorscheme' })
     return
   end
 
@@ -303,7 +303,7 @@ function ayu.colorscheme()
 
   vim.g.VM_theme_set_by_colorscheme = true -- Required for Visual Multi
   vim.o.termguicolors = true
-  vim.g.colors_name = 'ayu'
+  vim.g.colors_name = 'ayu-blackhole'
 
   colors.generate(config.mirage)
   set_terminal_colors()
